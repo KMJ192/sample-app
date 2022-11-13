@@ -1,5 +1,7 @@
+import Root from './Root';
+
 function page() {
-  return <div>main page</div>;
+  return <Root />;
 }
 
 export default page;

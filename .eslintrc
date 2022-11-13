@@ -37,6 +37,7 @@
     "import/newline-after-import": 0,
     "import/named": 0,
     "import/extensions": 0,
+    "no-restricted-exports": 0,
 
     "linebreak-style": 0,
     "global-require": 0,

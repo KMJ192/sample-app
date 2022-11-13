@@ -1,18 +1,35 @@
+@import 'styles/GlobalStyle.scss';
 
-$global-padding: 36px;
-
-header {
+.body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   .header {
-    padding: 8px $global-padding;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e3f2fd;
-    color: #007bff;
-    .left {
+    .desc {
+      padding: 8px $global-padding;
       display: flex;
-      gap: 24px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #e3f2fd;
+      color: #007bff;
+      .left {
+        display: flex;
+        gap: 24px;
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    position: absolute;
+    padding: 16px 0;
+    bottom: 0;
+    background-color: #e3f2fd;
+    & > div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 24px;
     }
   }
 }
-

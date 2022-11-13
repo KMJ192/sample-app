@@ -1,3 +1,5 @@
+import 'styles/globals.css';
+
 import classNamse from 'classnames/bind';
 import style from './style.module.scss';
 const cx = classNamse.bind(style);
@@ -9,9 +11,9 @@ type Props = {
 function RootLayout({ children }: Props) {
   return (
     <html lang='ko'>
-      <body>
-        <header>
-          <div className={cx('header')}>
+      <body className={cx('body')}>
+        <header className={cx('header')}>
+          <div className={cx('desc')}>
             <h2>백분위 계산기</h2>
             <div className={cx('left')}>
               <span>About</span>
@@ -23,7 +25,9 @@ function RootLayout({ children }: Props) {
           </div>
         </header>
         <main>{children}</main>
-        <footer>footer</footer>
+        <footer className={cx('footer')}>
+          <div>Copyright</div>
+        </footer>
       </body>
     </html>
   );

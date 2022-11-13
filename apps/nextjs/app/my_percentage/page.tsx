@@ -5,9 +5,6 @@ const cx = classNames.bind(style);
 const pageKey = 'my_percentage';
 
 function page() {
-  console.log(1);
-  if (typeof window !== 'object') return null;
-
   return (
     <div className={cx('container')}>
       <h1>나의 키 백분위</h1>
@@ -15,19 +12,11 @@ function page() {
         <h3>성별</h3>
         <div className={cx('selector')}>
           <div>
-            <input
-              id={`${pageKey}-selector-man`}
-              name='selector'
-              type='radio'
-            ></input>
+            <input id={`${pageKey}-selector-man`} name='selector' type='radio'></input>
             <label htmlFor={`${pageKey}-selector-man`}>남자</label>
           </div>
           <div>
-            <input
-              id={`${pageKey}-selector-woman`}
-              name='selector'
-              type='radio'
-            ></input>
+            <input id={`${pageKey}-selector-woman`} name='selector' type='radio'></input>
             <label htmlFor={`${pageKey}-selector-woman`}>여자</label>
           </div>
         </div>
