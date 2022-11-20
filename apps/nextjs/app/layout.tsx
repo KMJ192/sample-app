@@ -24,7 +24,7 @@ function RootLayout({ children }: Props) {
             </div>
           </div>
         </header>
-        <main>{children}</main>
+        <main className={cx('contents')}>{children}</main>
         <footer className={cx('footer')}>
           <div>Copyright</div>
         </footer>

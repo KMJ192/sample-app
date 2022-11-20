@@ -1,3 +1,5 @@
+import PageContents from './PageContents/PageContents';
+
 import classNames from 'classnames/bind';
 import style from './Root.module.scss';
 const cx = classNames.bind(style);
@@ -8,17 +10,7 @@ function Root() {
       <header>
         <h1>나의 백분위</h1>
       </header>
-      <div className={cx('card')}>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      <PageContents />
     </section>
   );
 }

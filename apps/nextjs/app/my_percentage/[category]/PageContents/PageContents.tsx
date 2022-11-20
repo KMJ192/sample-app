@@ -1,10 +1,12 @@
+'use client';
+
 import classNames from 'classnames/bind';
 import style from './style.module.scss';
 const cx = classNames.bind(style);
 
 const pageKey = 'my_percentage';
 
-function page() {
+function PageContents() {
   return (
     <div className={cx('container')}>
       <h1>나의 키 백분위</h1>
@@ -47,4 +49,4 @@ function page() {
   );
 }
 
-export default page;
+export default PageContents;

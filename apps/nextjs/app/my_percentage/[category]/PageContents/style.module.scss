@@ -1,14 +1,12 @@
 @import 'styles/GlobalStyle.scss';
 
 .container {
-  padding: $global-padding;
-
   .gender {
     .selector {
       display: flex;
-      gap: 12px;
+      // gap: 12px;
       & > div > input {
-        margin-right: 6px;
+        // margin-right: 6px;
       }
     }
     .age {
