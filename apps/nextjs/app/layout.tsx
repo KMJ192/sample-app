@@ -1,3 +1,7 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
+
 import 'styles/globals.css';
 
 import classNamse from 'classnames/bind';
@@ -9,12 +13,19 @@ type Props = {
 };
 
 function RootLayout({ children }: Props) {
+  const router = useRouter();
+  const handleMain = () => {
+    router.push('/');
+  };
+
   return (
     <html lang='ko'>
       <body className={cx('body')}>
         <header className={cx('header')}>
           <div className={cx('desc')}>
-            <h2>백분위 계산기</h2>
+            <h2 className={cx('main')} onClick={handleMain}>
+              백분위 계산기
+            </h2>
             <div className={cx('left')}>
               <span>About</span>
               <div>
